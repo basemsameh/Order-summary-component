@@ -1,0 +1,144 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: 0 -90px;
+    background-repeat: repeat-x;
+}
+
+.container {
+    margin-top: 40px;
+    height: 570px;
+    width: 340px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+/* Part of texts */
+.img {
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.vocab {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.vocab p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+/* Part of the Annual Plan */
+.symbol {
+    height: 80px;
+    width: 290px;
+    margin: 30px auto;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+    position: relative;
+}
+
+.symbol img {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+}
+
+span strong {
+    position: absolute;
+    top: 12px;
+    left: 85px;
+}
+
+span.price {
+    position: absolute;
+    bottom: 12px;
+    left: 85px;
+    color: hsl(224, 23%, 55%);
+}
+
+a.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+}
+
+a.change:hover {
+    text-decoration: none;
+    filter: brightness(2);
+}
+
+/* Part of the Proceed to payment */
+.proceed a {
+    height: 30px;
+    font-size: 16px;
+    width: 270px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 0 15px 10px 0 #dddcf5;
+    border-color: hsl(245, 75%, 52%);
+    text-decoration: none;
+}
+
+.proceed a:hover {
+    filter: brightness(2);
+}
+
+/* Part of the cancel order */
+.cancel {
+    margin: 17px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel a {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.cancel a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+@media (min-width: 376px) {
+    .container {
+        width: 400px;
+        height: 600px;
+    }
+
+    .symbol {
+        width: 85%;
+    }
+
+    .proceed a {
+        width: 80%;
+    }
+}
